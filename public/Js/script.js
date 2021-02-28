@@ -24,7 +24,6 @@ window.addEventListener("load", function () {
                 let formData = new FormData();
                 formData.append("city1", lat.value);
                 formData.append("city2", long.value);
-                close.innerHTML = "X";
                 load.style.display = "none";
                 loadingAnime.style.display = "flex";
                 mess.innerHTML = "";
@@ -32,7 +31,6 @@ window.addEventListener("load", function () {
                 let cloudURL = data.data.url1;
                 let graphURL = data.data.url2;
                 data = data.data.row_data;
-                console.log(data);
                 let wrap = document.createElement("div");
                 if (lists != null) {
 
@@ -99,7 +97,6 @@ window.addEventListener("load", function () {
                 let cloudURL = data.data.url1;
                 let graphURL = data.data.url2;
                 data = data.data.row_data;
-                console.log(data);
                 let wrap = document.createElement("div");
                 if (lists != null) {
 
@@ -158,7 +155,6 @@ window.addEventListener("load", function () {
                 let cloudURL = data.data.url1;
                 let graphURL = data.data.url2;
                 data = data.data.row_data;
-                console.log(data);
                 let wrap = document.createElement("div");
                 if (lists != null) {
 

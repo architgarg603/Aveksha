@@ -23,13 +23,18 @@
                     <div class="loginbtn">Login</div>
                     <div class="registerbtn">Sign Up</div>
                 </div>
-                <% } %>
+                <% }else{ %>
+                    <div class="loginbtn">Profile</div>
+                    <div class="registerbtn">Statistics</div>
+                    <% } %>
             </div>
         </div>
     
         <script src="/Js/landing.js"></script>
         <% if( isLoggedin == 0 ) {%>
         <script src="/Js/landingbtns.js"></script>
+        <% }else{ %>
+            <script src="/Js/landingbtn.js"></script>
         <% } %>
         
     </body>
