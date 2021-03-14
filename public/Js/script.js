@@ -31,6 +31,7 @@ window.addEventListener("load", function () {
                 let cloudURL = data.data.url1;
                 let graphURL = data.data.url2;
                 data = data.data.row_data;
+                console.log(data);
                 let wrap = document.createElement("div");
                 if (lists != null) {
 

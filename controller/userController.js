@@ -177,6 +177,9 @@ async function updateProfilePhoto(req, res) {
 async function getAllUser(req,res){
   try{
     let list = await userModel.find({}).sort({name: 1});
+    for(let i=0;i<list.length;i++){
+      list[i].password = ""; 
+    } 
     res.status(200).json({
       data:list
     })
