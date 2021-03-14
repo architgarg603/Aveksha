@@ -31,7 +31,22 @@ window.addEventListener("load", function () {
                 let cloudURL = data.data.url1;
                 let graphURL = data.data.url2;
                 data = data.data.row_data;
-                console.log(data);
+                let arr = []
+
+                for(let i=0;i<data.length;i++){
+                    let obj = {
+                        "atag": data[i][0],
+                        "location":data[i][1],
+                        "hash":data[i][4],
+                        "tweet":data[i][3],
+                        "pol":data[i][7]
+                    }
+                    arr.push(obj);
+                }
+
+                console.log(arr);
+                arr.sort((a,b) => (a.pol > b.pol) ? 1 : ((b.pol > a.pol) ? -1 : 0))
+                console.log(arr);
                 let wrap = document.createElement("div");
                 if (lists != null) {
 
