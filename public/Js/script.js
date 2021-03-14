@@ -44,10 +44,8 @@ window.addEventListener("load", function () {
                     arr.push(obj);
                 }
 
-                console.log(arr);
                 arr.sort((a,b) => (a.pol > b.pol) ? 1 : ((b.pol > a.pol) ? -1 : 0))
-                console.log(arr);
-                let wrap = document.createElement("div");
+              let wrap = document.createElement("div");
                 if (lists != null) {
 
                     for (let i = 0; i < data.length; i++) {
@@ -55,16 +53,16 @@ window.addEventListener("load", function () {
                         pt.classList.add("pt");
                         let name = document.createElement("h3");
                         let atag = document.createElement("a");
-                        atag.innerHTML = data[i][0];
+                        atag.innerHTML = arr[i].atag;
                         atag.setAttribute("target", "_blank");
-                        atag.setAttribute("href", `https://twitter.com/${data[i][0]}`)
+                        atag.setAttribute("href", `https://twitter.com/${arr[i].atag}`)
                         name.appendChild(atag)
                         let location = document.createElement("h3");
-                        location.innerHTML = data[i][1];
+                        location.innerHTML = arr[i].location;
                         let hash = document.createElement("h3");
-                        hash.innerHTML = data[i][4];
+                        hash.innerHTML = arr[i].hash;
                         let tweet = document.createElement("h3");
-                        tweet.innerHTML = data[i][3];
+                        tweet.innerHTML = arr[i].tweet;
                         pt.appendChild(name);
                         pt.appendChild(location);
                         pt.appendChild(hash)

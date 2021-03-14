@@ -5,7 +5,6 @@ async function pre() {
 
     data = data.data.data;
 
-    console.log(data);
     let tbody = document.createElement("tbody");
     for (let i = 0; i < data.length; i++) {
         if (data[i].role == "ADMIN") continue;
