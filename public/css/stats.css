@@ -15,6 +15,9 @@
   display: none !important;
 }
 
+.lat,.long{
+  display:  none;
+}
 
 .nav-bar{
   background-color: #191919;
