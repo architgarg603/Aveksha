@@ -25,12 +25,12 @@ window.addEventListener("load", function () {
             let option = state.value;
            
             if (option == "Select") {
-                lat.state.display = "none"
-                long.state.display = "none"
+                lat.style.display = "none"
+                long.style.display = "none"
 
             } else if (option == "Other") {
-                lat.state.display = "flex"
-                long.state.display = "flex"
+                lat.style.display = "flex"
+                long.style.display = "flex"
                 if (lat.value && long.value) {
                     e.preventDefault();
                     let words = word.value.split(" ");
@@ -99,8 +99,8 @@ window.addEventListener("load", function () {
             } else {
                 e.preventDefault();
                 
-                lat.state.display = "none"
-                long.state.display = "none"
+                lat.style.display = "none"
+                long.style.display = "none"
 
                 let cord = option.split(" ");
                 let words = word.value.split(" ");
