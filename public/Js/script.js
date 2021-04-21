@@ -44,7 +44,7 @@ window.addEventListener("load", function () {
             let option = state.value;
 
             if (option == "Select") {
-           
+                mess.innerHTML = "Select State first";
             } else if (option == "Other") {
                 if (lat.value && long.value) {
                     e.preventDefault();
