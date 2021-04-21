@@ -24,17 +24,17 @@ window.addEventListener("load", function () {
     state.addEventListener("change", function () {
         let option = state.value;
 
-        if (option == "Select") {
+         if (option == "Other") {
+            lat.style.display = "flex"
+            long.style.display = "flex"
+            longLabel.style.display = "flex"
+            latLabel.style.display = "flex"
+        }else  {
             lat.style.display = "none"
             long.style.display = "none"
             latLabel.style.display = "none"
             longLabel.style.display = "none"
 
-        } else if (option == "Other") {
-            lat.style.display = "flex"
-            long.style.display = "flex"
-            longLabel.style.display = "flex"
-            latLabel.style.display = "flex"
         }
     })
 
