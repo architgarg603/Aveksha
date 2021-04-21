@@ -15,9 +15,10 @@
   display: none !important;
 }
 
-.lat,.long{
+.lat,.long, #lat,#long{
   display:  none;
 }
+
 
 .nav-bar{
   background-color: #191919;
