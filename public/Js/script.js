@@ -58,6 +58,7 @@ window.addEventListener("load", function () {
                     loadingAnime.style.display = "flex";
                     mess.innerHTML = "";
                     let data = await axios.post("https://avekshaml.herokuapp.com/", formData)
+                    console.log(data.data);
                     let cloudURL = data.data.url1;
                     let graphURL = data.data.url2;
                     data = data.data.row_data;
