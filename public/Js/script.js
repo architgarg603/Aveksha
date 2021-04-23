@@ -48,7 +48,7 @@ window.addEventListener("load", function () {
             } else if (option == "Other") {
                 if (lat.value && long.value) {
                     e.preventDefault();
-                    let words = word.value.split(" ");
+                    let words = word.value;
                     let formData = new FormData();
                     formData.append("city1", lat.value);
                     formData.append("city2", long.value);
@@ -116,7 +116,7 @@ window.addEventListener("load", function () {
                 e.preventDefault();
 
                 let cord = option.split(" ");
-                let words = word.value.split(" ");
+                let words = word.value;
                 let formData = new FormData();
                 formData.append("city1", cord[0]);
                 formData.append("city2", cord[1]);
@@ -183,6 +183,7 @@ window.addEventListener("load", function () {
         } catch (err) {
             load.style.display = "flex";
             mess.innerHTML = "No tweets found";
+            loadingAnime.style.display = "none";
 
         }
 
