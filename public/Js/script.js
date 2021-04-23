@@ -49,6 +49,9 @@ window.addEventListener("load", function () {
                 if (lat.value && long.value) {
                     e.preventDefault();
                     let words = word.value;
+                    if(words == ""){
+                        words = "women rape";
+                    }
                     let formData = new FormData();
                     formData.append("city1", lat.value);
                     formData.append("city2", long.value);
@@ -117,6 +120,9 @@ window.addEventListener("load", function () {
 
                 let cord = option.split(" ");
                 let words = word.value;
+                if(words == ""){
+                    words = "women rape";
+                }
                 let formData = new FormData();
                 formData.append("city1", cord[0]);
                 formData.append("city2", cord[1]);
