@@ -13,7 +13,7 @@ let lists = document.querySelector(".lists");
 let aboutDiv = document.querySelector(".about")
 let graphDiv = document.querySelector(".graph")
 let state = document.querySelector("#state");
-let word = document.querySelector("#Search")
+
 let latLabel = document.querySelector(".lat")
 let longLabel = document.querySelector(".long")
 // stats page
@@ -48,7 +48,7 @@ window.addEventListener("load", function () {
             } else if (option == "Other") {
                 if (lat.value && long.value) {
                     e.preventDefault();
-                    let words = word.value;
+                    let words = "";
                     if(words == ""){
                         words = "women rape";
                     }
@@ -119,7 +119,7 @@ window.addEventListener("load", function () {
                 e.preventDefault();
 
                 let cord = option.split(" ");
-                let words = word.value;
+                let words = "";
                 if(words == ""){
                     words = "women rape";
                 }
